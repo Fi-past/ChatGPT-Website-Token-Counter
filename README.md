@@ -1,6 +1,6 @@
 ### 这是什么
 
-一款统计https://chat.openai.com/网站上对话所消耗token数目，并计算出所需美元/人民币的chrome插件
+一款统计 https://chat.openai.com/ 网站上对话所消耗token数目，并计算出所需美元/人民币的chrome插件
 
 通俗来讲就是，你想不想知道自己在开通了chatgpt plus或者免费版本中，究竟爆了openai多少的金币
 
@@ -36,11 +36,11 @@
 
 ### 如何使用
 
-本插件只针对https://chat.openai.com/网站生效，在chrome中进入该网址
+本插件只针对 https://chat.openai.com/ 网站生效，在chrome中进入该网址
 
 ![img](https://cdn.nlark.com/yuque/0/2024/png/40382789/1713528350475-9a0f8d2e-500d-406b-ba44-7fd674b7c1ab.png)
 
-默认配置如下，注意无论是勾选启用插件还是修改刷新时间，均需要点击保存后，刷新https://chat.openai.com/网站后才能生效
+默认配置如下，注意无论是勾选启用插件还是修改刷新时间，均需要点击保存后，刷新 https://chat.openai.com/ 网站后才能生效
 
 ![img](https://cdn.nlark.com/yuque/0/2024/png/40382789/1713528398880-65184a7f-432a-4bf8-b966-f9e37595bdbd.png)
 
@@ -60,6 +60,8 @@
 不一定会一直维护，但如果有感兴趣的点或者志同道合的开发者可以一起完善这个项目，毕竟项目初衷是为了我的个人兴趣，网上也并没有相关统计chatgpt网站token数目和费用的插件，因此我便自己写了个
 
 如果用的人多我可以注册一下Chrome 应用商店开发者，到时候更新和发布就会容易一些，不用自己手动安装了
+
+如果觉得好用可以帮忙点个star（球球了），虽然是娱乐项目但有些star也会有成就感
 
 ![img](https://cdn.nlark.com/yuque/0/2024/png/40382789/1713529248313-101d4a67-0ba6-486d-8b15-99a139f4987f.png)
 
