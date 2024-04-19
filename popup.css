@@ -1,0 +1,64 @@
+body {
+    min-width: 300px; /* 定义一个最小宽度 */
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* 设置背景颜色 */
+    color: #333; /* 文本颜色 */
+}
+h1 {
+    color: #5B84B1FF; /* 标题颜色 */
+    text-align: center; /* 标题居中对齐 */
+}
+form {
+    background: #fff; /* 表单背景颜色 */
+    border: 1px solid #ddd; /* 边框颜色 */
+    padding: 20px;
+    border-radius: 8px; /* 边框圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
+}
+label {
+    margin-bottom: 0.5em;
+    color: #333; /* 标签文本颜色 */
+}
+input[type="number"] {
+    width: calc(100% - 22px); /* 减去内边距和边框的宽度 */
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5B84B1FF; /* 按钮背景颜色 */
+    color: #fff; /* 按钮文本颜色 */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    background-color: #457fca; /* 鼠标悬停时的背景颜色 */
+}
+.centered {
+    text-align: center; /* 文字居中对齐 */
+    display: block; /* 使其成为块级元素 */
+    margin: auto; /* 水平居中 */
+}
+.text-style {
+    font-size: 14px; /* 设置字体大小 */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* 设置字体族 */
+    color: #333; /* 设置字体颜色，这是一个深灰色 */
+    font-weight: bold; /* 设置字体加粗 */
+    margin-bottom: 10px; /* 设置下边距 */
+}
+/* 页脚样式 */
+.footer {
+    text-align: center; /* 居中文本 */
+    font-size: 12px; /* 较小的字体大小 */
+    color: #777; /* 深灰色文本 */
+    margin-top: 10px; /* 与上方内容的间隔 */
+}

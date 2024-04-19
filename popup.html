@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>插件选项</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="sweetalert2.all.min.js"></script>
+</head>
+<body>
+<h1>插件设置</h1>
+<form id="options-form">
+    <label for="enable-switch" class="centered text-style">启用插件(需要点击保存):
+        <input type="checkbox" id="enable-switch"><br>
+    </label>
+    <label for="refresh-interval" class="centered text-style">刷新间隔 (秒):</label>
+    <input type="number" id="refresh-interval" min="5" max="60" value="15">
+    <button type="submit">保存(设置刷新页面生效)</button>
+</form>
+<!-- 页脚作者信息 -->
+<div class="footer">
+    <p>© 2024 时错(timeErrors)</p>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

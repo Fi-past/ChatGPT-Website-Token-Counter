@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  // 声明 manifest 文件的版本，当前推荐的版本是 3
+  "name": "ChatGPT Website Token Counter",
+  // 插件的名称，显示在 Chrome 扩展程序管理页面
+  "version": "1.0",
+  // 插件的版本号，用于更新和版本控制
+  "description": "Counts and displays the number of tokens in OpenAI Chat Website.",
+  // 插件的简短描述，向用户解释其功能
+  "background": {
+    // 定义插件的后台脚本
+    "service_worker": "background.js"
+    // 指定后台脚本的文件名
+  },
+  "permissions": [
+    "tabs",
+    // 声明插件所需的权限
+    "storage",
+    // 允许插件存储数据，例如 token 计数
+    "activeTab",
+    // 允许插件访问当前活动标签页的内容
+    "scripting",
+    // 允许插件执行脚本以修改页面内容
+    "notifications"
+  ],
+  "action": {
+    // 定义插件的弹出界面
+    "default_popup": "popup.html"
+    // 指定弹出界面的 HTML 文件名
+  },
+  "content_scripts": [
+    // 定义内容脚本，用于在网页上下文中运行
+    {
+      "matches": [
+        "https://chat.openai.com/*"
+      ],
+      // 指定内容脚本要注入的网页 URL 模式
+      "js": [
+//        "node-schedule.js",
+        "./content.js"
+//        "./dist/contentWebpack.js"
+      ]
+      // 指定内容脚本的文件名
+    }
+  ],
+  "icons": {
+    // 插件图标
+    "16": "static/img/icon.png",
+    "48": "static/img/icon.png",
+    "128": "static/img/icon.png"
+  }
+}
