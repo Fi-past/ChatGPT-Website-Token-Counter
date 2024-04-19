@@ -104,59 +104,6 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// 定时任务执行的函数
-// function scheduleDataFetch(interval) {
-//     setInterval(() => {
-//         const {userInputs, aiAnswers} = extractAnswersByUserAndAI("div.text-message");
-//         // 将用户输入列表合并为一个字符串
-//         const userInputsString = userInputs.join("\n\n"); // 使用两个换行符作为分隔符
-//         // 将 AI 回答列表合并为一个字符串
-//         const aiAnswersString = aiAnswers.join("\n\n"); // 使用两个换行符作为分隔符
-//         // 打印合并后的字符串
-//         // console.log("Merged User Inputs:", userInputsString);
-//         // console.log("Merged AI Answers:", aiAnswersString);
-//         // console.log("Length of User Inputs:", userInputsString.length);
-//         // console.log("Length of AI Answers:", aiAnswersString.length);
-//
-//         const userInputsStringResult = separateChinese(userInputsString);
-//         const userInputsStringTokenCount = countTokensByLanguage(userInputsStringResult.chinese, userInputsStringResult.other);
-//         // console.log("userInputsStringTokenCount数量:", userInputsStringTokenCount);
-//
-//         const aiAnswersStringResult = separateChinese(aiAnswersString);
-//         const aiAnswerTokenCount = countTokensByLanguage(aiAnswersStringResult.chinese, aiAnswersStringResult.other);
-//         // console.log("aiAnswerTokenCount数量:", aiAnswerTokenCount);
-//
-//         const usdToCnyRate = 7.24;
-//         const costGPT4 = calculateCost(userInputsStringTokenCount, aiAnswerTokenCount, 'gpt-4');
-//         console.log(`总token: ${aiAnswerTokenCount + userInputsStringTokenCount}`);
-//         console.log(`GPT4花费: $${costGPT4.toFixed(5)} (¥${(costGPT4 * usdToCnyRate).toFixed(5)})`);
-//         const costGPT3_5 = calculateCost(userInputsStringTokenCount, aiAnswerTokenCount, 'gpt-3.5');
-//         console.log(`GPT3.5花费: $${costGPT3_5.toFixed(5)} (¥${(costGPT3_5 * usdToCnyRate).toFixed(5)})`);
-//
-//         costDisplay.innerHTML = `
-//        总token: ${aiAnswerTokenCount + userInputsStringTokenCount}
-//       GPT4花费: $${costGPT4.toFixed(5)} (¥${(costGPT4 * usdToCnyRate).toFixed(5)})
-//       GPT3.5花费: $${costGPT3_5.toFixed(5)} (¥${(costGPT3_5 * usdToCnyRate).toFixed(5)})`;
-//
-//
-//         const parentElement = document.querySelector("div.relative.px-2.py-2.text-center");
-//         if (!parentElement.contains(costDisplay)) {
-//             parentElement.appendChild(costDisplay);
-//         }
-//
-//         // const parentElement = document.querySelector("div.w-full.pt-2");
-//         // if (!parentElement.contains(costDisplay)) {
-//         //     parentElement.appendChild(costDisplay);
-//         // }
-//
-//     }, interval);
-// }
-//
-// // 页面加载完成后开始定时任务
-// window.addEventListener('load', () => {
-//     scheduleDataFetch(10000);
-// });
-
 function fetchDataAndUpdateUI() {
     const {userInputs, aiAnswers} = extractAnswersByUserAndAI("div.text-message");
     const userInputsString = userInputs.join("\n\n");

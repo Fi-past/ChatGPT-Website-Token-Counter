@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     chrome.storage.sync.get(['isEnabled', 'refreshInterval'], function (data) {
         // 设置开关状态，如果没有存储值则默认为true。
         enableSwitch.checked = data.isEnabled ?? true;
-        // 设置刷新间隔，如果没有存储值则默认为15秒。
-        refreshIntervalInput.value = data.refreshInterval ?? 15;
+        // 设置刷新间隔，如果没有存储值则默认为10秒。
+        refreshIntervalInput.value = data.refreshInterval ?? 10;
     });
 
     // 监听表单的提交事件。
